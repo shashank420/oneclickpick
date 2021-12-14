@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+/* ----- HEADINGS ----- */
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
+
+h1 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    font-family: "Source Serif Pro";
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.size {
+    font-size: 20px;
+}
+
+
+/* ----- PARAGRAPHS ----- */
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* ----- LINKS ----- */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+/* ----- BUTTONS ----- */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+}
+
+.a {
+
+    margin-left: 220px;
+}
+
+.navbar-brand:active {
+    text-decoration: none;
+}
+
+.navbar-brand:link {
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+}
+
+.navbar-brand:visited {
+    text-decoration: none;
+}
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+header {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+}
+
+.tag {
+
+    font-style: italic;
+    color: white;
+    font-size: 17px;
+    padding-top: 160px;
+    margin-left: 254px;
+}
+
+
+
+
+
+/* ----- SECTION ----- */
+.section-features {
+    padding-top: 40px;
+}
+
+.feature-box {
+    margin-top: 40px;
+    align-content: center;
+    text-align: center;
+
+}
+
+/* ----- ICONS ----- */
+.icon-big {
+    font-size: 350%;
+    color: #e67e22;
+    transition: color 0.4s;
+}
+
+.icon-big:hover {
+    color: #ff7700;
+}
+
+.heart:hover {
+    color: red;
+}
+
+
+/* ----- TESTIMONIALS ----- */
+.section-testimonials {
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgba(247, 114, 0, 0.54);
+    display: inline-block;
+    height: 310px;
+}
+
+.customer {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.comm {
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.comm:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+
+}
+
+/* ----- SERVICE ----- */
+
+.section-services {
+    margin-top: 50px;
+}
+
+.card {
+    opacity: 0.8;
+    text-align: center;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.card:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
+
+/* ----------------------------------------------- */
+/* FORM */
+/* ----------------------------------------------- */
+.section-form {
+    padding-bottom: 20px;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+.section-form {
+    margin-top: 60px;
+    background-color: rgba(247, 114, 0, 0.54);
+}
+
+.adjust2 {
+    padding-top: 10px;
+}
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+.section-footer {}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    font-size: 80%;
+    margin-top: 10px;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+#facebook,
+#twitter,
+#google,
+#instagram {
+    transition: color 0.2s;
+}
+
+#facebook:hover {
+    color: #3b5998;
+}
+
+#twitter:hover {
+    color: #00aced;
+}
+
+#google:hover {
+    color: #dd4b39;
+}
+
+#instagram:hover {
+    color: #517fa4;
+}
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#adjust {
+    padding-top: 20px;
+}
+
+/* ----------------------------------------------- */
+/* Rate Us */
+/* ----------------------------------------------- */
+
+.rate {
+    display: flex;
+    transform: rotateY(180deg);
+}
+
+.rate input {
+    display: none;
+}
+
+.rate label {
+    cursor: pointer;
+    width: 50px;
+    display: block;
+}
+
+.rate label:before {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 30px;
+    color: #101010;
+
+
+}
+
+.rate label:after {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 30px;
+    top: 0;
+    opacity: 0;
+    transition: .3s;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+    color: orange;
+
+}
+
+.rate label:hover:after,
+.rate label:hover ~ label:after,
+.rating input:checked ~ label:after {
+    opacity: 1;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+
+    float: left;
+    display: block;
+
+}
+
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+/* ----------------------------------------------- */
+/* Sticky Navbar */
+/* ----------------------------------------------- */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+    color: white;
+}
+
+.sticky .main-nav {
+    margin-top: 18px;
+    color: white;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: white;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-black {
+    display: block;
+}

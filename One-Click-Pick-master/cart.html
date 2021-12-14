@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!------------------------>
+<!---Title of the Product-->
+<!------------------------>
+<title>Your Shopping Cart</title>
+<!------------------------>
+<!---Linking of CSS-->
+<!------------------------>
+ <link rel="stylesheet" type="text/css" href="css/common.css">
+ <!------------------------>
+<!---Linking of Google Fonts-->
+<!------------------------>
+<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Merriweather:wght@700&family=Overpass:wght@300&family=Playfair+Display:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+ <!------------------------>
+<!---Fevicon of the Project-->
+<!------------------------>
+ <link rel="icon" href="common/icon.png">
+ <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+ <!------------------------>
+<!---Upper Navigation-->
+<!------------------------>
+  <div class="upper_nav">
+
+
+
+  <!------------------------>
+<!---Logo linking to the home page-->
+<!------------------------>
+<span class="logo"><a href="landing_page.html"><img src="common/LOGO.jpg" alt="The Picture will be Loaded Soon"></a></span>
+
+
+   <!------------------------>
+<!---Div for the search bar-->
+<!------------------------>
+<div class="fill">
+    <span class="entry"><input type="search" placeholder="Search for products, brands and more">
+     <button class="button">
+      <img src="common/search.png" alt="The Picture will be Loaded Soon">
+     </button></span>
+   </div>
+
+
+   <!------------------------>
+<!---Linking to the SIGN IN and Login Page-->
+<!------------------------>
+   <span class="sign"><a href="cart.html">CART</a><span class="items">0</span></span>
+
+
+<!--------------------------------->
+<!---Drop Down for More Options-->
+<!-------------------------------->
+<div id="dropdown">
+    <span class="dropbtn">MORE<ion-icon name="caret-down" class="dropdown"></ion-icon></span>
+	<span class="dropdown-head"></span>
+    <div class="dropdown-content">
+     <a href="membership.html">Membership</a>
+     <a href="sign in and up.html">Login / Sign In</a>
+     <a href="landing_page.html#feedback">Feedback Form</a>
+     <a href="our team.html">Our Team</a>
+    </div>
+   </div>
+  </div>
+
+
+  <!--------------------------------->
+<!---Middle Navigation Bar-->
+<!-------------------------------->
+  <div class="mid_nav">
+   <a href="electronics.html">Electronics & Accessories</a>
+   <a href="fashion.html">Fashion & Lifestyle</a>
+   <a href="sports.html">Sports & Fitness</a>
+   <a href="furniture.html">Furniture & Living</a>
+   <a href="b&e.html">Books & Entertainment</a>
+  </div>
+  <div class="cart">
+  <div class = "products-container">
+  <div class = "product-header">
+	<span class = "product-title">PRODUCT</span>
+	<span class = "price">PRICE</span>
+	<span class = "quantity">QUANTITY</span>
+	<span class = "total">TOTAL</span>
+  </div>
+  <div class = "products1">
+	<span class="empty">No Product Available in Cart</span><br>
+	<span class="shopmore">If you want to shop more then
+		<a href="electronics.html"> Click Here </a>
+	and continue shopping</span>
+  </div>
+  <div class = "product1">
+  </div>
+  <div class = "product2">
+  </div>
+  <div class = "product3">
+  </div>
+  <div class = "product4">
+  </div>
+  <div class = "product5">
+  </div>
+  </div>
+  <div class = "sub-total">
+	<img src="common/cart.png" height=250 width=290>
+  </div>
+  </div>
+  <script src="JavaScript/ElectronicsJava.js"></script>
+  <script src="JavaScript/FashionJava.js"></script>
+  <script src="JavaScript/SportsJava.js"></script>
+  <script src="JavaScript/FurnitureJava.js"></script>
+  <script src="JavaScript/B&EJava.js"></script>
+  </body>
+  </html>

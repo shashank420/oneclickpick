@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!------------------------>
+<!---Title of the Product-->
+<!------------------------>
+<title>Enter Your Billing Information - OCP Process</title>
+<!------------------------>
+<!---Linking of CSS-->
+<!------------------------>
+ <link rel="stylesheet" type="text/css" href="css/payment.css">
+ <!------------------------>
+<!---Linking of Google Fonts-->
+<!------------------------>
+<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Merriweather:wght@700&family=Overpass:wght@300&family=Playfair+Display:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+ <!------------------------>
+<!---Fevicon of the Project-->
+<!------------------------>
+ <link rel="icon" href="common/icon.png">
+ <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body style="background-image: url('images/Rainbow-Gradient-Pink-and-Purple-Zoom-Virtual-Background.png');">
+  <div class="upper">
+<div class="image">
+  <img src="common/circle-cropped.png" heigth="110" width="110">
+</div>
+<div class="progress-bar">
+<ul>
+  <li>
+    <ion-icon name="checkmark-circle" id="check"></ion-icon>
+    <hr class="hr1">
+    Added to Cart
+  </li>
+  <li>
+    <ion-icon name="close-circle" id="cross1"></ion-icon>
+    <ion-icon name="checkmark-circle" id="check1"></ion-icon>
+    <ion-icon name="cart" id="c1"></ion-icon>
+    <hr class="hr2">
+    Billing Information
+  </li>
+  <li>
+    <ion-icon name="close-circle" id="cross2"></ion-icon>
+    <ion-icon name="checkmark-circle" id="check2"></ion-icon>
+    <ion-icon name="cart" id="c2"></ion-icon>
+    <hr class="hr3">
+    Payment Method
+  </li>
+  <li>
+    <ion-icon name="close-circle" id="cross3"></ion-icon>
+    <ion-icon name="checkmark-circle" id="check3"></ion-icon>
+    <ion-icon name="cart" id="c3"></ion-icon>
+    <hr class="hr4">
+    Confirm Order
+  </li>
+  <li>
+    <ion-icon name="close-circle" id="cross4"></ion-icon>
+    <ion-icon name="checkmark-circle" id="check4"></ion-icon>
+    <ion-icon name="cart" id="c4"></ion-icon>
+    Order Placed
+  </li>
+</ul>
+</div>
+</div>
+<div class="below">
+  <div class="information">
+    <span class='bill-head'><h2>Billing Details</h2></span>
+    <span class='mandate-star'>* Mandatory Field</span>
+    <div class="name">
+      <div class="first-name">
+        <span class="first-name">First Name<span id="star">*</span>:</span>
+        <input type="text" class="name1" onclick="style='box-shadow:rgba(0,123,255,.25);'" onFocus="style='box-shadow:rgba(0,123,255,.25);'"></input>
+      </div>
+      <div class="last-name">
+        <span class="last-name">Last Name<span id="star">*</span>:</span>
+        <input type="text" class="name2" onclick="style='box-shadow:rgba(0,123,255,.25);'" onFocus="style='box-shadow:rgba(0,123,255,.25);'"></input>
+      </div>
+    </div>
+    <div class="c-name">
+      <span class="c-name">Company Name (optional) :</span>
+      <input type="text" class="c-name"></input>
+    </div>
+    <div class="state">
+      <span class="state">State / Region<span id="star">*</span> : </span>
+      <select class="state" onchange="state()" onclick="style='box-shadow:rgba(0,123,255,.25);'"  onFocus="style='box-shadow:rgba(0,123,255,.25);'">
+        <option value="Select State" selected>--------Select State-------</option>
+        <option value="Andra Pradesh">Andra Pradesh</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Goa">Goa</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option>
+        <option value="Jharkhand">Jharkhand</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Kerela">Kerela</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Manipur">Manipur</option>
+        <option value="Meghalaya">Meghalaya</option>
+        <option value="Mizoram">Mizoram</option>
+        <option value="Nagaland">Nagaland</option>
+        <option value="Odisha">Odisha</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Sikkim">Sikkim</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Tripura">Tripura</option>
+        <option value="Uttarakhand">Uttarakhand</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="West Bengal">West Bengal</option>
+      </select>
+    </div>
+    <div class="address">
+     <span>Strret Address<span id="star">*</span> : </span>
+     <div class="address-fields">
+       <input type="text" class="add add1" placeholder="House number and street name" onclick="style='box-shadow:rgba(0,123,255,.25);'"  onFocus="style='box-shadow:rgba(0,123,255,.25);'"></input>
+       <input type="text" class="add add2" placeholder="Appartment, suite, unit, etc." onclick="style='box-shadow:rgba(0,123,255,.25);'"  onFocus="style='box-shadow:rgba(0,123,255,.25);'"></input>
+     </div>
+   </div>
+   <div class="landmark">
+     <span>Landmark (optional) :</span>
+     <input type="text" class="landmark" placeholder="Enter any place near you for reference"></input>
+   </div>
+   <div class="city">
+     <span>Town / City <span id="star">*</span>:</span>
+     <input type="text" class="city" onclick="style='box-shadow:rgba(0,123,255,.25);'" onFocus="style='box-shadow:rgba(0,123,255,.25);'"></input>
+   </div>
+   <div class="pincode">
+     <span>Pincode <span id="star">*</span>: </span>
+     <input type="text" class="pincode" onkeypress="return event.charCode>=48 && event.charCode<=57" maxlength="6" onclick="style='box-shadow:rgba(0,123,255,.25);'" onFocus="style='box-shadow:rgba(0,123,255,.25);'"></inout>
+   </div>
+   <div class="phone">
+     <span>Phone <span id="star">*</span> : </span>
+     <span class="code">+91</span>
+     <input type="tel" class="phone" maxlength="10" onkeypress="return event.charCode>=48 && event.charCode<=57" onclick="style='box-shadow:rgba(0,123,255,.25);'" onFocus="style='box-shadow:rgba(0,123,255,.25);'"></input>
+   </div>
+   <div class="email">
+     <span>Email Address <span id="star">*</span> : </span>
+     <input type="email" class="email" onclick="style='box-shadow:rgba(0,123,255,.25);'" onFocus="style='box-shadow:rgba(0,123,255,.25);'"></input>
+   </div>
+  </div>
+  <div class = "sub-total">
+  </div>
+</div>
+  <script src="JavaScript/paymentJava.js"></script>
+  </body>
+  </html>

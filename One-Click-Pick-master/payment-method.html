@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!------------------------>
+<!---Title of the Product-->
+<!------------------------>
+<title>Enter Your Billing Information - OCP Process</title>
+<!------------------------>
+<!---Linking of CSS-->
+<!------------------------>
+ <link rel="stylesheet" type="text/css" href="css/payment.css">
+ <!------------------------>
+<!---Linking of Google Fonts-->
+<!------------------------>
+<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Merriweather:wght@700&family=Overpass:wght@300&family=Playfair+Display:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+ <!------------------------>
+<!---Fevicon of the Project-->
+<!------------------------>
+ <link rel="icon" href="common/icon.png">
+ <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body style="background-image: url('images/Rainbow-Gradient-Pink-and-Purple-Zoom-Virtual-Background.png');">
+<div class="upper">
+  <div class="image">
+    <img src="common/circle-cropped.png" heigth="110" width="110">
+  </div>
+  <div class="progress-bar">
+  <ul>
+  <li>
+    <ion-icon name="checkmark-circle" id="check"></ion-icon>
+    <hr class="hr1">
+    Added to Cart
+  </li>
+  <li>
+    <ion-icon name="close-circle" id="cross1" style="display:none;"></ion-icon>
+    <ion-icon name="checkmark-circle" id="check1" style="display:block;"></ion-icon>
+    <ion-icon name="cart" id="c1" style="display:none;"></ion-icon>
+    <hr class="hr2" style="background-color:#64ACFF">
+    Billing Information
+  </li>
+  <li>
+    <ion-icon name="close-circle" id="cross2"></ion-icon>
+    <ion-icon name="checkmark-circle" id="check2"></ion-icon>
+    <ion-icon name="cart" id="c2" style="display:block;"></ion-icon>
+    <hr class="hr3">
+    Payment Method
+  </li>
+  <li>
+    <ion-icon name="close-circle" id="cross3"></ion-icon>
+    <ion-icon name="checkmark-circle" id="check3"></ion-icon>
+    <ion-icon name="cart" id="c3"></ion-icon>
+    <hr class="hr4">
+    Confirm Order
+  </li>
+  <li>
+    <ion-icon name="close-circle" id="cross4"></ion-icon>
+    <ion-icon name="checkmark-circle" id="check4"></ion-icon>
+    <ion-icon name="cart" id="c4"></ion-icon>
+    Order Placed
+  </li>
+  </ul>
+  </div>
+</div>
+<div class="below">
+  <div class="information">
+    <span class='pay-head'>Select a Payment Method</span>
+    <span class="wallet">Pay faster for all your shopping needs with<font color="red"> OCP Pay Wallet.</font></span>
+    <div>
+      <span class='pay-head1'>Add a Payment Option :</span>
+    </div>
+    <div class="debit-credit">
+      <input type="radio" name="r" id="r1" value="debit"></input><img class="debit-credit-image" src="images/card.gif">&emsp;<span class="r-inner">Credit / Debit / ATM Card</span>
+      <div id="card">
+        <div class="debit-credit-inner-cardnumber">
+          <span class="cardnumber-name">Card numbers :</span>
+          <input type="text" id="num1" onclick="style='box-shadow:rgba(0,123,255,.25);'" onFocus="style='box-shadow:rgba(0,123,255,.25);'" onkeypress="return event.charCode>=48 && event.charCode<=57" maxlength="4"></input>
+          <input type="text" id="num2" onclick="style='box-shadow:rgba(0,123,255,.25);'" onFocus="style='box-shadow:rgba(0,123,255,.25);'" onkeypress="return event.charCode>=48 && event.charCode<=57" maxlength="4"></input>
+          <input type="text" id="num3" onclick="style='box-shadow:rgba(0,123,255,.25);'" onFocus="style='box-shadow:rgba(0,123,255,.25);'" onkeypress="return event.charCode>=48 && event.charCode<=57" maxlength="4"></input>
+          <input type="text" id="num4" class="num" onFocus="style='box-shadow:rgba(0,123,255,.25);'" onclick="style='box-shadow:rgba(0,123,255,.25);'" onkeypress="return event.charCode>=48 && event.charCode<=57" maxlength="4"></input>
+        </div>
+        <div class="debit-credit-inner-name">
+          <span class="name-on-card">Name On Card : </span>
+          <input type="text" id="name-field" onclick="card_number_check()"></input>
+        </div>
+        <div class="debit-credit-inner-expiry">
+          <span class="expiry">Valid Thru :</span>
+          <select class="expiry-month">
+          <option selected>MM</option>
+          <option>01</option>
+          <option>02</option>
+          <option>03</option>
+          <option>04</option>
+          <option>05</option>
+          <option>06</option>
+          <option>07</option>
+          <option>08</option>
+          <option>09</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          </select>
+          <select class="expiry-year">
+          <option selected>YY</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+          <option>32</option>
+          <option>33</option>
+          <option>34</option>
+          <option>35</option>
+          <option>36</option>
+          <option>37</option>
+          <option>38</option>
+          <option>39</option>
+          <option>40</option>
+          </select>
+        </div>
+        <div class="debit-credit-inner-cvv">
+          <span class="cvv">CVV :</span>
+          <input type="password" class="cvv-field" onkeypress="return event.charCode>=48 && event.charCode<=57" maxlength="3"></input>
+          <span id="cvv-icon"><ion-icon name="help-circle" class="help"></ion-icon></span>
+          <span id="help-head"></span>
+          <div id="cvv-help">
+            <span id="close"><ion-icon name="close"></ion-icon></span>
+            <img src="images/cvv.png" class="cvv-help-image" height="150" width="400">
+            <h3 class="what-cvv">What is CVV ?</h3>
+            <span class="what-cvv">The CVV number is the last three digits on the back of the card</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="upi-payments">
+      <div class="upi-payment-head">
+        <input type="radio" class="r" id="r2"></input>
+        <img src="images/upi.gif">
+        <span class="r-upi-inner">UPI Payment Method ( PhonePe / Paytm / Google Pay / BHIM )</span>
+      </div>
+      <div id="options">
+        <span class="option-head">Choose an Option :</span>
+        <span class="r2inner"><input type="radio" class="r2-inner" id="r2-inner-a">&emsp;</input></span><span class="r2-inner-a">PhonePe
+          <input type="tel" onkeypress="return event.charCode>=48 && event.charCode<=57 && numberLink(event)" onkeydown="numberlinkExit(event )" id="phonepe-number" maxlength="10" placeholder="Enter PhonePe Number"></input></span><ion-icon id="number-check-phonepe" name="checkmark-circle"></ion-icon>
+        <span class="r2inner"><input type="radio" class="r2-inner" id="r2-inner-b">&emsp;</input></span><span class="r2-inner-b">Your UPI ID
+        <input type="search" id="upi-id-field" placeholder="Enter UPI ID"></input></span>
+      </div>
+    </div>
+    <div class="wallets">
+      <div class = "wallets-head">
+        <input type="radio" name="r" id="r3"></input>
+        <img src="images/paytm.png">
+        <span class="r-wallet-inner">Paytm Wallet </span>
+      </div>
+      <div id="paytm-wallet">
+        <span class="paytm-wallet-head">Paytm Number :</span>
+        <input type="tel" onkeypress="return event.charCode>=48 && event.charCode<=57 && numberLink(event)" onkeydown="numberlinkExit(event)" id="paytm-number-field" placeholder="Enter Linked Paytm Number" maxlength="10"><ion-icon id="number-check" name="checkmark-circle"></ion-icon>
+        <input type="button" id="link-button" value="Link Now" onclick="check_display()"></input></input>
+        <span id="number-checked">Your Number has been Linked.</span>
+      </div>
+    </div>
+    <div class="net-banking">
+      <div class="banking-head">
+        <input type="radio" name="r" id="r4"></input>
+        <span class="r-banking-inner">Net Banking </span>
+      </div>
+      <div id="net-banking">
+        <div class="popular-banks">
+          <span class="popular-banks-head">Popular Banks</span>
+          <div class="banks">
+            <input type="radio" class="br1" id="br1" value="HDFC Bank"></input><img src="images/hdfc.jpg"><span class="bank-name1">HDFC Bank</span>
+            <input type="radio" class="br2" id="br2" value="ICICI Bank"></input><img src="images/icici.png"><span class="bank-name2">ICICI Bank</span>
+            <input type="radio" class="br3" id="br3" value="SBI Bank"></input><img src="images/sbi.png"><span class="bank-name3">State Bank Of India</span>
+            <input type="radio" class="br4" id="br4" value="AXIS Bank"></input><img src="images/axis.png"><span class="bank-name4">Axis Bank</span>
+            <input type="radio" class="br5" id="br5" value="Kotak Bank"></input><img src="images/kotak.jpg"><span class="bank-name5">Kotak Bank</span>
+          </div>
+        </div>
+        <div class="other-banks">
+          <span class="other-banks-head">Other Banks</span>
+          <select class="other-banks-select" id="other-banks-select" onchange="other_banks()">
+            <option value="Select-Bank">---Select Bank---</option>
+            <option value="Airtel Payments Bank">Airtel Payments Bank</option>
+            <option value="Allahabad Bank">Allahabad Bank</option>
+            <option value="Andhra Bank">Andhra Bank</option>
+            <option value="AU Small Finance Bank">AU Small Finance Bank</option>
+            <option value="Bandhan Bank">Bandhan Bank</option>
+            <option value="Bassien Catholic Co-Operative Bank">Bassien Catholic Co-Operative Bank</option>
+            <option value="BNP Paribas">BNP Paribas</option>
+            <option value="Bank of Bahrain and Kuwait">Bank of Bahrain and Kuwait</option>
+            <option value="Bank of Baroda">Bank of Baroda</option>
+            <option value="Bank of Baroda Corporate">Bank of Baroda Corporate</option>
+            <option value="Bank of India">Bank of India</option>
+            <option value="Bank of Maharashtra">Bank of Maharashtra</option>
+            <option value="Canara Bank">Canara Bank</option>
+            <option value="Catholic Syrian Bank">Catholic Syrian Bank</option>
+            <option value="Central Bank">Central Bank</option>
+            <option value="City Union Bank">City Union Bank</option>
+            <option value="Cosmos Co-op Bank">Cosmos Co-op Bank</option>
+            <option value="Digibank by DBS">Digibank by DBS</option>
+            <option value="DCB Bank Ltd">DCB BANK LTD</option>
+            <option value="Dena Bank">Dena Bank</option>
+            <option value="Deutsche Bank">Deutsche Bank</option>
+            <option value="Dhanalakshmi Bank">Dhanalakshmi Bank</option>
+            <option value="Federal Bank">Federal Bank</option>
+            <option value="IDBI Bank">IDBI Bank</option>
+            <option value="IDFC First Bank">IDFC FIRST Bank</option>
+            <option value="Indian Bank">Indian Bank</option>
+            <option value="Indusland Bank">Indusland Bank</option>
+            <option value="Indian Overseas Bank">Indian Overseas Bank</option>
+            <option value="Janta Sahakari Bank Ltd Pune">JANATA SAHAKARI BANK LTD PUNE</option>
+            <option value="JK Bank">J&amp;K Bank</option>
+            <option value="Karnataka Bank">Karnataka Bank</option>
+            <option value="Karur Vysya Bank">Karur Vysya Bank</option>
+            <option value="Lakshmi Vilas Bank - Retail">Lakshmi Vilas Bank - Retail</option>
+            <option value="Lakshmi Vilas Bank - Corporate">Lakshmi Vilas Bank - Corporate</option>
+            <option value="Punjab National Bank">Punjab National Bank</option>
+            <option value="Punjab National Bank Corporate">Punjab National Bank Corporate</option>
+            <option value="Punjab Sind Bank">Punjab &amp; Sind Bank</option>
+            <option value="Punjab Maharashtra Co-op Bank">Punjab &amp; Maharashtra Co-op Bank</option>
+            <option value="RBL Bank - Net Banking">RBL Bank – Net Banking</option>
+            <option value="RBS">RBS</option>
+            <option value="Saraswat Co-op Bank">Saraswat Co-op Bank</option>
+            <option value="Shamrao Vithal Co-op Bank">Shamrao Vithal Co-op Bank</option>
+            <option value="Shivalik Mercantile Co-op Bank">Shivalik Mercantile Co-op Bank</option>
+            <option value="The South Indian Bank">The South Indian Bank</option>
+            <option value="Standard Chartered Bank">Standard Chartered Bank</option>
+            <option value="Syndicate Bank">Syndicate Bank</option>
+            <option value="Tamil Nadu Mercantile Bank Limited">Tamil Nadu Mercantile Bank Limited</option>
+            <option value="TNSC Bank">TNSC Bank</option>
+            <option value="UCO Bank">UCO Bank</option>
+            <option value="Union Bank of India">Union Bank of India</option>
+            <option value="United Bank of India">United Bank of India</option>
+            <option value="Vijaya Bank">Vijaya Bank</option>
+            <option value="Yes Bank">Yes Bank</option>
+            <option value="The Zoroastrian Co-Operative Bank">The Zoroastrian Co-Operative Bank</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="cash-on-delivery-head">
+      <input type="radio" name="r" id="r5"></input>
+      <span class="r-delivery-inner">Cash On Delivery</span>
+    </div>
+  </div>
+  <div class = "sub-total">
+  </div>
+</div>
+  <script src="JavaScript/payment-methodJava.js"></script>
+  </body>
+  </html>

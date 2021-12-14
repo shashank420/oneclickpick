@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!------------------------>
+<!---Title of the Product-->
+<!------------------------>
+<title>Enter Your Billing Information - OCP Process</title>
+<!------------------------>
+<!---Linking of CSS-->
+<!------------------------>
+ <link rel="stylesheet" type="text/css" href="css/payment.css">
+ <!------------------------>
+<!---Linking of Google Fonts-->
+<!------------------------>
+<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Merriweather:wght@700&family=Overpass:wght@300&family=Playfair+Display:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+ <!------------------------>
+<!---Fevicon of the Project-->
+<!------------------------>
+ <link rel="icon" href="common/icon.png">
+ <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body style="background-image: url('images/Rainbow-Gradient-Pink-and-Purple-Zoom-Virtual-Background.png');">
+  <div class="upper">
+<div class="image">
+  <img src="common/circle-cropped.png" heigth="110" width="110">
+</div>
+<div class="progress-bar">
+<ul>
+  <li>
+    <ion-icon name="checkmark-circle" id="check"></ion-icon>
+    <hr class="hr1">
+    Added to Cart
+  </li>
+  <li>
+    <ion-icon name="close-circle" id="cross1" style="display:none;"></ion-icon>
+    <ion-icon name="checkmark-circle" id="check1" style="display:block;"></ion-icon>
+    <ion-icon name="cart" id="c1" style="display:none;"></ion-icon>
+    <hr class="hr2" style="background-color:#64ACFF;">
+    Billing Information
+  </li>
+  <li>
+    <ion-icon name="close-circle" id="cross2" style="display:none;"></ion-icon>
+    <ion-icon name="checkmark-circle" id="check2" style="display:block;"></ion-icon>
+    <ion-icon name="cart" id="c2"></ion-icon>
+    <hr class="hr3" style="background-color:#64ACFF;">
+    Payment Method
+  </li>
+  <li>
+    <ion-icon name="close-circle" id="cross3"></ion-icon>
+    <ion-icon name="checkmark-circle" id="check3"></ion-icon>
+    <ion-icon name="cart" id="c3" style="display:block;"></ion-icon>
+    <hr class="hr4">
+    Confirm Order
+  </li>
+  <li>
+    <ion-icon name="close-circle" id="cross4"></ion-icon>
+    <ion-icon name="checkmark-circle" id="check4"></ion-icon>
+    <ion-icon name="cart" id="c4"></ion-icon>
+    Order Placed
+  </li>
+</ul>
+</div>
+</div>
+<div class="below">
+  <div class="information">
+    <div class="upper-half">
+    <div class="confirm-head">
+      <span class="confirm-head-inner">Review your order and pass for Confirming</span>
+      <span class="confirm-head-small">By placing orderyou agree to OCP's <font color="blue">privacy notice</font> and <font color="blue">conditions of use.</font></span>
+    </div>
+    <div class="upper-half-content">
+    <div class="shipping-address">
+      <span class="shipping-address-head">Shipping Address</span>
+      <a class="shipping-address-change" onclick="shipping_change()">Change</a>
+      <div class="shipping-address-inner"></div>
+    </div>
+    <div class="payment-method">
+      <span class="payment-method-head">Payment Method</span>
+      <a class="payment-method-change" onclick="payment_change()">Change</a>
+      <div class="payment-method-inner"></div>
+    </div>
+    <div class="delivery">
+      <span class="delivery-head">Estimated Delivery</span>
+      <div class="delivery-inner"></div>
+    </div>
+  </div>
+  <div class="bottom-half-content">
+  </div>
+  </div>
+  </div>
+  <div class = "sub-total">
+  </div>
+</div>
+  <script src="JavaScript/confirmJava.js"></script>
+  </body>
+  </html>

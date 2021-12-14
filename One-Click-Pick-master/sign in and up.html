@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- CSS FILES   -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/sign%20in%20and%20up.css">
+
+  <!--GOOGLE FONTS    -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+
+  <script src="JavaScript/response.js"></script>
+  <link rel="icon" href="common/icon.png">
+</head>
+
+<body style="background-image: url('images/03-deep-blue-1024x576.jpg');">
+
+  <div class="container mt-5" id="container">
+
+    <div class="form-container sign-up-container mt-2">
+      <form action="result.html" method="post" target="_blank">
+        <h1 class="font-weight-bold">Create Account</h1>
+        <div class="social-container">
+          <a href="https://accounts.google.com/" class="social">
+            <ion-icon name="logo-google" id="google"></ion-icon>
+          </a>
+          <a href="https://www.facebook.com/" class="social">
+            <ion-icon name="logo-facebook" id="facebook"></ion-icon>
+          </a>
+          <a href="https://twitter.com/login?lang=en" class="social">
+            <ion-icon name="logo-twitter" id="twitter"></ion-icon>
+          </a>
+        </div>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="pass" placeholder="Password" required>
+        <input type="tel" id="phone" name="phone" placeholder="Number" maxlength="11" required>
+        <button class="btn btn-danger" type="submit" onclick="handleSubmit()">Sign up</button>
+      </form>
+    </div>
+
+    <div class="form-container sign-in-container">
+      <form action="electronics.html">
+        <h1 class="font-weight-bold">Sign in</h1>
+        <div class="social-container">
+          <a href="https://accounts.google.com/" class="social">
+            <ion-icon name="logo-google" id="google"></ion-icon>
+          </a>
+          <a href="https://www.facebook.com/" class="social">
+            <ion-icon name="logo-facebook" id="facebook"></ion-icon>
+          </a>
+          <a href="https://twitter.com/login?lang=en" class="social">
+            <ion-icon name="logo-twitter" id="twitter"></ion-icon>
+          </a>
+        </div>
+        <span>or use your account</span>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="btn btn-danger" type="submit">Sign In</button>
+      </form>
+    </div>
+
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1 class="font-weight-bold">Welcome!</h1>
+          <p>Already have an account? <br></p>
+          <button class="but" id="signIn">Sign In</button>
+
+        </div>
+
+        <div class="overlay-panel overlay-right">
+          <h1 class="font-weight-bold">Hello, Friend!</h1>
+          <p>New to One Click Pick? Sign Up now!</p>
+          <button class="but" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!--JAVASCRIPT FILES-->
+
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="JavaScript/sign%20in%20and%20up.js"></script>
+</body>
+
+</html>
